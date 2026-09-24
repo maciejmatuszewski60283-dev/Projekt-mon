@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bezpieczni w kryzysie - Powszechne Szkolenia Obronne</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <h1>Bezpieczni w kryzysie</h1>
+            <nav>
+                <a href="#o-projekcie">O projekcie</a>
+                <a href="#zakres">Zakres</a>
+                <a href="#terminy">Terminy</a>
+                <a href="#miejsce">Miejsce</a>
+                <a href="#kontakt">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content">
+        <section id="o-projekcie" class="card">
+            <h2>O projekcie</h2>
+            <p>Zadanie „Bezpieczni w kryzysie - powszechne szkolenia obronne (Kurs Bezpieczeństwo dla mieszkańców Wielkopolski)” realizowane jest przez Fundację Naturalni. Celem projektu jest poszerzenie wiedzy oraz umiejętności praktycznych społeczeństwa z zakresu zachowania się w sytuacjach kryzysowych oraz w przypadku wystąpienia zagrożenia militarnego.</p>
+        </section>
+
+        <section id="zakres" class="card">
+            <h2>Zakres szkolenia</h2>
+            <p><strong>Temat 1:</strong> Przygotowanie siebie i swojego otoczenia na sytuację zagrożenia (plecak ewakuacyjny, przygotowanie otoczenia, sygnały alarmowe i reagowanie na nie).</p>
+            <p><strong>Temat 2:</strong> Reagowanie na zagrożenia (ocena poszkodowanego, udrożnienie dróg oddechowych, RKO, obsługa defibrylatora AED, Basic Life Support).</p>
+            <p><strong>Temat 3:</strong> Planowanie swojego działania na wypadek zagrożenia (plan kryzysowy, lista niezbędnych rzeczy, terenoznawstwo i elementy przetrwania, cyberhigiena).</p>
+        </section>
+
+        <section id="terminy" class="card">
+            <h2>Terminy szkoleń</h2>
+            <p>Realizacja projektu obejmuje 5 edycji jednodniowych szkoleń (8 godzin dydaktycznych każda), prowadzonych w okresie od 1 sierpnia 2026 r. do 30 listopada 2026 r.</p>
+        </section>
+
+        <section id="miejsce" class="card">
+            <h2>Miejsce i uczestnicy</h2>
+            <p><strong>Miejsce realizacji:</strong> Tereny leśne Golęcina w Poznaniu oraz infrastruktura udostępniona przez Stowarzyszenie Horyzont Przyszłości.</p>
+            <p><strong>Grupa docelowa:</strong> 150 osób w wieku 15-30 lat z województwa wielkopolskiego (młodzież, dorośli, studenci, klasy mundurowe). Każdy uczestnik otrzymuje imienny certyfikat.</p>
+        </section>
+
+        <section id="kontakt" class="card">
+            <h2>Kontakt</h2>
+            <p>Fundacja Naturalni<br>
+            Adres e-mail: M.MATUSZEWSKA0508@GMAIL.COM<br>
+            Telefon: 603694358</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-logos">
+            <img src="logo1.png" alt="Logo 1">
+            <img src="logo2.png" alt="Logo 2">
+            <img src="logo3.png" alt="Logo 3">
+        </div>
+        <p class="footer-text">Zadanie jest współfinansowane ze środków Ministerstwa Obrony Narodowej</p>
+    </footer>
+
+    <!-- Informacja o plikach cookies -->
+    <div id="cookie-banner" class="cookie-banner">
+        <p>Ta strona korzysta z plików cookies w celu prawidłowego działania.</p>
+        <button onclick="acceptCookies()">Rozumiem</button>
+    </div>
+
+    <script>
+        function acceptCookies() {
+            localStorage.setItem('cookies_accepted', 'true');
+            document.getElementById('cookie-banner').style.display = 'none';
+        }
+
+        window.onload = function() {
+            if (localStorage.getItem('cookies_accepted') === 'true') {
+                document.getElementById('cookie-banner').style.display = 'none';
+            }
+        };
+    </script>
+
+</body>
+</html>
