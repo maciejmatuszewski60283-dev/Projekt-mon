@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Bezpieczni w kryzysie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <h1>Bezpieczni w kryzysie</h1>
+            <nav>
+                <a href="index.html">O projekcie</a>
+                <a href="index.html#zakres">Zakres</a>
+                <a href="index.html#terminy">Terminy</a>
+                <a href="index.html#miejsce">Miejsce</a>
+                <a href="kontakt.html">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content">
+        <section class="card">
+            <h2>Kontakt</h2>
+            <p><strong>Fundacja Naturalni</strong></p>
+            <p>Adres e-mail: <a href="mailto:kontakt@naturalnizawsze.pl">kontakt@naturalnizawsze.pl</a></p>
+            <p>Telefony do kontaktu:<br>
+            - 603 694 358<br>
+            - 505 997 311</p>
+            
+            <div style="margin-top: 1rem;">
+                <p><strong>Social Media:</strong></p>
+                <p>Facebook: [Wkrótce]<br>
+                Instagram: [Wkrótce]</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-logos">
+            <img src="logo1.png" alt="Logo 1">
+            <img src="logo2.png" alt="Logo 2">
+            <img src="logo3.png" alt="Logo 3">
+        </div>
+        <p class="footer-text">Zadanie jest współfinansowane ze środków Ministerstwa Obrony Narodowej</p>
+    </footer>
+
+    <div id="cookie-banner" class="cookie-banner">
+        <p>Ta strona korzysta z plików cookies w celu prawidłowego działania.</p>
+        <button onclick="acceptCookies()">Rozumiem</button>
+    </div>
+
+    <script>
+        function acceptCookies() {
+            localStorage.setItem('cookies_accepted', 'true');
+            document.getElementById('cookie-banner').style.display = 'none';
+        }
+        window.onload = function() {
+            if (localStorage.getItem('cookies_accepted') === 'true') {
+                document.getElementById('cookie-banner').style.display = 'none';
+            }
+        };
+    </script>
+
+</body>
+</html>
