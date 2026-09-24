@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f9f7;
+    background-image: radial-gradient(#e3ede3 15%, transparent 16%), radial-gradient(#d0ded0 15%, transparent 16%);
+    background-size: 60px 60px;
+    background-position: 0 0, 30px 30px;
+    color: #2b2b2b;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #3b533b;
+    color: white;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+}
+
+header h1 {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    max-width: 700px;
+    margin: 1.5rem auto;
+    padding: 0 1rem;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #d1d9d1;
+    padding: 1.5rem;
+    margin-bottom: 1.2rem;
+    border-radius: 4px;
+}
+
+h2 {
+    color: #3b533b;
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+p {
+    font-size: 0.95rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.8rem;
+    border-top: 1px solid #d1d9d1;
+    margin-top: 2rem;
+    background-color: #ffffff;
+}
